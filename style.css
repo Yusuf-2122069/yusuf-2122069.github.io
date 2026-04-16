@@ -17,6 +17,7 @@ body{
     padding-bottom:90px;
 }
 
+/* Header */
 header{
     position:sticky;
     top:0;
@@ -56,6 +57,7 @@ header nav ul li a.active{
     color:#fff;
 }
 
+/* Home Section */
 .content{
     width:90%;
     max-width:1100px;
@@ -75,6 +77,7 @@ header nav ul li a.active{
     margin-bottom:25px;
 }
 
+/* Button */
 .content .btn{
     display:inline-block;
     padding:12px 25px;
@@ -90,8 +93,8 @@ header nav ul li a.active{
     transform:translateY(-3px);
 }
 
-.courses,
-#courses{
+/* Courses Section */
+.courses{
     width:90%;
     max-width:1100px;
     margin:80px auto;
@@ -100,74 +103,42 @@ header nav ul li a.active{
     overflow-x:auto;
 }
 
-.courses h1,
-.courses h2,
-#courses h1,
-#courses h2{
+.courses h2{
     font-size:32px;
     color:#355872;
     margin-bottom:30px;
 }
 
-.courses h3,
-#courses h3{
-    margin-top:25px;
-    font-size:22px;
-    color:#355872;
-}
-
-.courses table,
-#courses table{
+.courses table{
     width:100%;
     border-collapse:collapse;
     background:#fff;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
-.courses th,
-#courses th{
+.courses th{
     background:#355872;
     color:#fff;
     padding:15px;
     font-size:18px;
 }
 
-.courses td,
-#courses td{
+.courses td{
     padding:15px;
     border:1px solid #ddd;
     font-size:16px;
 }
 
-.courses tr:nth-child(even),
-#courses tr:nth-child(even){
+.courses tr:nth-child(even){
     background:#f2f2f2;
 }
 
-.courses tr:hover,
-#courses tr:hover{
+.courses tr:hover{
     background:#dce9f3;
     transition:0.3s ease;
 }
 
-.courses .btn,
-#courses .btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#355872;
-    color:#fff;
-    text-decoration:none;
-    border-radius:6px;
-    transition:0.3s ease;
-}
-
-.courses .btn:hover,
-#courses .btn:hover{
-    background:#2c4560;
-    transform:translateY(-3px);
-}
-
+/* Footer */
 footer{
     position:fixed;
     bottom:0;
@@ -195,6 +166,7 @@ footer .social-icons a:hover{
     opacity:0.7;
     transform:scale(1.2);
 }
+
 
 .add-course{
     width:90%;
@@ -225,9 +197,7 @@ footer .social-icons a:hover{
     color:#355872;
 }
 
-.add-course input,
-.add-course select,
-.add-course textarea{
+.add-course select{
     padding:12px;
     font-size:16px;
     border:1px solid #ccc;
@@ -236,14 +206,8 @@ footer .social-icons a:hover{
     transition:0.3s ease;
 }
 
-.add-course input:focus,
-.add-course select:focus,
-.add-course textarea:focus{
+.add-course select:focus{
     border-color:#355872;
-}
-
-.add-course textarea{
-    resize:vertical;
 }
 
 .add-course button{
@@ -261,6 +225,7 @@ footer .social-icons a:hover{
     background:#2c4560;
     transform:translateY(-2px);
 }
+
 
 .contact-us{
     width:90%;
@@ -334,6 +299,8 @@ footer .social-icons a:hover{
     transform:translateY(-2px);
 }
 
+
+/* Tablet */
 @media (max-width:768px){
 
     .content h1{
@@ -344,17 +311,12 @@ footer .social-icons a:hover{
         font-size:16px;
     }
 
-    .courses h1,
-    .courses h2,
-    #courses h1,
-    #courses h2{
+    .courses h2{
         font-size:26px;
     }
 
     .courses th,
-    .courses td,
-    #courses th,
-    #courses td{
+    .courses td{
         font-size:14px;
         padding:10px;
     }
@@ -364,6 +326,7 @@ footer .social-icons a:hover{
     }
 }
 
+/* Mobile */
 @media (max-width:480px){
 
     header nav ul{
@@ -380,17 +343,12 @@ footer .social-icons a:hover{
         font-size:14px;
     }
 
-    .courses h1,
-    .courses h2,
-    #courses h1,
-    #courses h2{
+    .courses h2{
         font-size:22px;
     }
 
     .courses th,
-    .courses td,
-    #courses th,
-    #courses td{
+    .courses td{
         font-size:12px;
         padding:8px;
     }
@@ -403,32 +361,42 @@ footer .social-icons a:hover{
         font-size:22px;
     }
 
-    .add-course,
+    .add-course{
+        padding:20px;
+    }
+
+    .add-course h2{
+        font-size:24px;
+    }
+
+    .add-course label{
+        font-size:15px;
+    }
+
+    .add-course select,
+    .add-course button{
+        font-size:14px;
+    }
     .contact-us{
         padding:20px;
     }
 
-    .add-course h2,
     .contact-us h2{
         font-size:24px;
-    }
-
-    .add-course label,
-    .contact-us label{
-        font-size:15px;
-    }
-
-    .add-course input,
-    .add-course select,
-    .add-course textarea,
-    .add-course button,
-    .contact-us input,
-    .contact-us textarea,
-    .contact-us button{
-        font-size:14px;
     }
 
     .contact-info{
         font-size:14px;
     }
+
+    .contact-us label{
+        font-size:15px;
+    }
+
+    .contact-us input,
+    .contact-us textarea,
+    .contact-us button{
+        font-size:14px;
+    }
 }
+
