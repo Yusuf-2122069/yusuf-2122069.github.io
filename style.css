@@ -94,7 +94,7 @@ header nav ul li a.active{
 }
 
 /* Courses Section */
-.courses{
+#courses{
     width:90%;
     max-width:1100px;
     margin:80px auto;
@@ -103,37 +103,37 @@ header nav ul li a.active{
     overflow-x:auto;
 }
 
-.courses h2{
+#courses h2{
     font-size:32px;
     color:#355872;
     margin-bottom:30px;
 }
 
-.courses table{
+#courses table{
     width:100%;
     border-collapse:collapse;
     background:#fff;
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
-.courses th{
+#courses th{
     background:#355872;
     color:#fff;
     padding:15px;
     font-size:18px;
 }
 
-.courses td{
+#courses td{
     padding:15px;
     border:1px solid #ddd;
     font-size:16px;
 }
 
-.courses tr:nth-child(even){
+#courses tr:nth-child(even){
     background:#f2f2f2;
 }
 
-.courses tr:hover{
+#courses tr:hover{
     background:#dce9f3;
     transition:0.3s ease;
 }
@@ -311,12 +311,12 @@ footer .social-icons a:hover{
         font-size:16px;
     }
 
-    .courses h2{
+    #courses h2{
         font-size:26px;
     }
 
-    .courses th,
-    .courses td{
+    #courses th,
+    #courses td{
         font-size:14px;
         padding:10px;
     }
@@ -343,12 +343,12 @@ footer .social-icons a:hover{
         font-size:14px;
     }
 
-    .courses h2{
+    #courses h2{
         font-size:22px;
     }
 
-    .courses th,
-    .courses td{
+    #courses th,
+    #courses td{
         font-size:12px;
         padding:8px;
     }

@@ -24,7 +24,7 @@
 
     <form>
         <label for="course-name">Course Name</label>
-        <select id="course-name">
+        <select id="course-name" required>
             <option value="">Choose Course</option>
             <option>Web Development</option>
             <option>Python Basics</option>
@@ -33,15 +33,23 @@
             <option>Artificial Intelligence</option>
         </select>
 
-        <label for="course-round">Course Round</label>
-        <select id="course-round">
-            <option value="">Choose Round</option>
-            <option>First Round</option>
-            <option>Second Round</option>
-            <option>Summer Round</option>
+        <label for="instructor">Instructor</label>
+        <select id="instructor" required>
+            <option value="">Choose Instructor</option>
+            <option>Ahmed Ali</option>
+            <option>Sara Mohamed</option>
+            <option>Mona Ali</option>
+            <option>Karim Youssef</option>
+            <option>Omar Adel</option>
         </select>
 
-        <button type="submit">Submit</button>
+        <label for="hours">Credit Hours (1 - 4)</label>
+        <input type="number" id="hours" min="1" max="4" required>
+
+        <label for="notes">Notes</label>
+        <textarea id="notes" rows="4"></textarea>
+
+        <button type="submit">Add Course</button>
     </form>
 </section>
 </main>
